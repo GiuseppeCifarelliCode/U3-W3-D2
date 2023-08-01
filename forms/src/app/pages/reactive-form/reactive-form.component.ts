@@ -30,7 +30,7 @@ export class ReactiveFormComponent {
 
   send(){
     if(this.form.value.authData.password === this.form.value.authData.confirmPassword){
-      console.log(this.form);
+      console.log(this.form.value);
       this.form.reset()
     } else this.passwordError = "Passwords don't match"
   }

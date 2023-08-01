@@ -13,5 +13,6 @@ export class DrivenFormComponent {
 
   login(form:NgForm){
     console.log(form.form.value);
+    form.reset()
   }
 }
