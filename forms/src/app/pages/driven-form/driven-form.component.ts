@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-driven-form',
@@ -10,6 +11,7 @@ export class DrivenFormComponent {
   username!:string
   password!:string
 
-  login(){
+  login(form:NgForm){
+    console.log(form.form.value);
   }
 }
